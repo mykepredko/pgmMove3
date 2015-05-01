@@ -149,6 +149,233 @@
                                                     </next>
                                                   </block>
                                                 </statement>
+                                                <next>
+                                                  <block type="variables_set" id="263" inline="true">
+                                                    <field name="VAR">i</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_number" id="270">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="controls_whileUntil" id="271" inline="false">
+                                                        <field name="MODE">WHILE</field>
+                                                        <value name="NUMBER">
+                                                          <block type="logic_compare" id="272" inline="true">
+                                                            <field name="OP">NEQ</field>
+                                                            <value name="A">
+                                                              <block type="variables_get" id="303">
+                                                                <field name="VAR">i</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <block type="variables_get" id="291">
+                                                                <field name="VAR">pgmSize</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <statement name="DO">
+                                                          <block type="controls_if" id="329" inline="false">
+                                                            <mutation elseif="4"></mutation>
+                                                            <value name="IF0">
+                                                              <block type="logic_compare" id="336" inline="true">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="math_arithmetic" id="346" inline="true">
+                                                                    <field name="OP">MODULO</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="359">
+                                                                        <field name="VAR">reverseDigits</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="347">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="366">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO0">
+                                                              <block type="movement_stop" id="403"></block>
+                                                            </statement>
+                                                            <value name="IF1">
+                                                              <block type="logic_compare" id="374" inline="true">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="math_arithmetic" id="375" inline="true">
+                                                                    <field name="OP">MODULO</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="376">
+                                                                        <field name="VAR">reverseDigits</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="377">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="378">
+                                                                    <field name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO1">
+                                                              <block type="movement_forward" id="413"></block>
+                                                            </statement>
+                                                            <value name="IF2">
+                                                              <block type="logic_compare" id="379" inline="true">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="math_arithmetic" id="380" inline="true">
+                                                                    <field name="OP">MODULO</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="381">
+                                                                        <field name="VAR">reverseDigits</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="382">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="383">
+                                                                    <field name="NUM">2</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO2">
+                                                              <block type="movement_reverse" id="423"></block>
+                                                            </statement>
+                                                            <value name="IF3">
+                                                              <block type="logic_compare" id="389" inline="true">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="math_arithmetic" id="390" inline="true">
+                                                                    <field name="OP">MODULO</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="391">
+                                                                        <field name="VAR">reverseDigits</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="392">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="393">
+                                                                    <field name="NUM">3</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO3">
+                                                              <block type="movement_left" id="433"></block>
+                                                            </statement>
+                                                            <value name="IF4">
+                                                              <block type="logic_compare" id="384" inline="true">
+                                                                <field name="OP">EQ</field>
+                                                                <value name="A">
+                                                                  <block type="math_arithmetic" id="385" inline="true">
+                                                                    <field name="OP">MODULO</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="386">
+                                                                        <field name="VAR">reverseDigits</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="387">
+                                                                        <field name="NUM">10</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="388">
+                                                                    <field name="NUM">4</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <statement name="DO4">
+                                                              <block type="movement_right" id="443"></block>
+                                                            </statement>
+                                                            <next>
+                                                              <block type="robot_delay" id="315" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_number" id="322">
+                                                                    <field name="NUM">500</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="variables_set" id="283" inline="true">
+                                                                    <field name="VAR">reverseDigits</field>
+                                                                    <value name="VALUE">
+                                                                      <block type="math_arithmetic" id="284" inline="true">
+                                                                        <field name="OP">DIVIDE</field>
+                                                                        <value name="A">
+                                                                          <block type="variables_get" id="285">
+                                                                            <field name="VAR">reverseDigits</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="B">
+                                                                          <block type="math_number" id="286">
+                                                                            <field name="NUM">10</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="variables_set" id="287" inline="true">
+                                                                        <field name="VAR">i</field>
+                                                                        <value name="VALUE">
+                                                                          <block type="math_arithmetic" id="288" inline="true">
+                                                                            <field name="OP">ADD</field>
+                                                                            <value name="A">
+                                                                              <block type="variables_get" id="289">
+                                                                                <field name="VAR">i</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="B">
+                                                                              <block type="math_number" id="290">
+                                                                                <field name="NUM">1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </statement>
+                                                        <next>
+                                                          <block type="movement_stop" id="313"></block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </next>
                                           </block>
