@@ -44,113 +44,123 @@
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="controls_whileUntil" id="64" inline="false">
-                                            <field name="MODE">WHILE</field>
-                                            <value name="NUMBER">
-                                              <block type="logic_compare" id="71" inline="true">
-                                                <field name="OP">NEQ</field>
-                                                <value name="A">
-                                                  <block type="variables_get" id="79">
-                                                    <field name="VAR">tempDigits</field>
-                                                  </block>
-                                                </value>
-                                                <value name="B">
-                                                  <block type="math_number" id="86">
-                                                    <field name="NUM">0</field>
-                                                  </block>
-                                                </value>
+                                          <block type="variables_set" id="249" inline="true">
+                                            <field name="VAR">reverseDigits</field>
+                                            <value name="VALUE">
+                                              <block type="math_number" id="253">
+                                                <field name="NUM">0</field>
                                               </block>
                                             </value>
-                                            <statement name="DO">
-                                              <block type="variables_set" id="198" inline="true">
-                                                <field name="VAR">reverseDigits</field>
-                                                <value name="VALUE">
-                                                  <block type="math_arithmetic" id="199" inline="true">
-                                                    <field name="OP">MULTIPLY</field>
+                                            <next>
+                                              <block type="controls_whileUntil" id="64" inline="false">
+                                                <field name="MODE">WHILE</field>
+                                                <value name="NUMBER">
+                                                  <block type="logic_compare" id="71" inline="true">
+                                                    <field name="OP">NEQ</field>
                                                     <value name="A">
-                                                      <block type="variables_get" id="200">
-                                                        <field name="VAR">reverseDigits</field>
+                                                      <block type="variables_get" id="79">
+                                                        <field name="VAR">tempDigits</field>
                                                       </block>
                                                     </value>
                                                     <value name="B">
-                                                      <block type="math_number" id="201">
-                                                        <field name="NUM">10</field>
+                                                      <block type="math_number" id="86">
+                                                        <field name="NUM">0</field>
                                                       </block>
                                                     </value>
                                                   </block>
                                                 </value>
-                                                <next>
-                                                  <block type="variables_set" id="208" inline="true">
+                                                <statement name="DO">
+                                                  <block type="variables_set" id="198" inline="true">
                                                     <field name="VAR">reverseDigits</field>
                                                     <value name="VALUE">
-                                                      <block type="math_arithmetic" id="209" inline="true">
-                                                        <field name="OP">ADD</field>
+                                                      <block type="math_arithmetic" id="199" inline="true">
+                                                        <field name="OP">MULTIPLY</field>
                                                         <value name="A">
-                                                          <block type="variables_get" id="210">
+                                                          <block type="variables_get" id="200">
                                                             <field name="VAR">reverseDigits</field>
                                                           </block>
                                                         </value>
                                                         <value name="B">
-                                                          <block type="math_arithmetic" id="235" inline="true">
-                                                            <field name="OP">MODULO</field>
-                                                            <value name="A">
-                                                              <block type="variables_get" id="247">
-                                                                <field name="VAR">tempDigits</field>
-                                                              </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="248">
-                                                                <field name="NUM">10</field>
-                                                              </block>
-                                                            </value>
+                                                          <block type="math_number" id="201">
+                                                            <field name="NUM">10</field>
                                                           </block>
                                                         </value>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="variables_set" id="100" inline="true">
-                                                        <field name="VAR">tempDigits</field>
+                                                      <block type="variables_set" id="208" inline="true">
+                                                        <field name="VAR">reverseDigits</field>
                                                         <value name="VALUE">
-                                                          <block type="math_arithmetic" id="107" inline="true">
-                                                            <field name="OP">DIVIDE</field>
+                                                          <block type="math_arithmetic" id="209" inline="true">
+                                                            <field name="OP">ADD</field>
                                                             <value name="A">
-                                                              <block type="variables_get" id="115">
-                                                                <field name="VAR">tempDigits</field>
+                                                              <block type="variables_get" id="210">
+                                                                <field name="VAR">reverseDigits</field>
                                                               </block>
                                                             </value>
                                                             <value name="B">
-                                                              <block type="math_number" id="122">
-                                                                <field name="NUM">10</field>
+                                                              <block type="math_arithmetic" id="235" inline="true">
+                                                                <field name="OP">MODULO</field>
+                                                                <value name="A">
+                                                                  <block type="variables_get" id="247">
+                                                                    <field name="VAR">tempDigits</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="248">
+                                                                    <field name="NUM">10</field>
+                                                                  </block>
+                                                                </value>
                                                               </block>
                                                             </value>
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="variables_set" id="123" inline="true">
-                                                            <field name="VAR">pgmSize</field>
+                                                          <block type="variables_set" id="100" inline="true">
+                                                            <field name="VAR">tempDigits</field>
                                                             <value name="VALUE">
-                                                              <block type="math_arithmetic" id="131" inline="true">
-                                                                <field name="OP">ADD</field>
+                                                              <block type="math_arithmetic" id="107" inline="true">
+                                                                <field name="OP">DIVIDE</field>
                                                                 <value name="A">
-                                                                  <block type="variables_get" id="139">
-                                                                    <field name="VAR">pgmSize</field>
+                                                                  <block type="variables_get" id="115">
+                                                                    <field name="VAR">tempDigits</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="B">
-                                                                  <block type="math_number" id="124">
-                                                                    <field name="NUM">1</field>
+                                                                  <block type="math_number" id="122">
+                                                                    <field name="NUM">10</field>
                                                                   </block>
                                                                 </value>
                                                               </block>
                                                             </value>
+                                                            <next>
+                                                              <block type="variables_set" id="123" inline="true">
+                                                                <field name="VAR">pgmSize</field>
+                                                                <value name="VALUE">
+                                                                  <block type="math_arithmetic" id="131" inline="true">
+                                                                    <field name="OP">ADD</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="139">
+                                                                        <field name="VAR">pgmSize</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="124">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
                                                     </next>
                                                   </block>
-                                                </next>
+                                                </statement>
                                               </block>
-                                            </statement>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
