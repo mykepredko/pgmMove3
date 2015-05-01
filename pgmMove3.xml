@@ -24,7 +24,7 @@
                                 <field name="VAR">programDigits</field>
                                 <value name="VALUE">
                                   <block type="math_number" id="32">
-                                    <field name="NUM">1011303101</field>
+                                    <field name="NUM">123401234</field>
                                   </block>
                                 </value>
                                 <next>
