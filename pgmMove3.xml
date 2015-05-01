@@ -1,1 +1,125 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="comment_comment" id="2" x="124" y="19">
+    <field name="TEXT">pgmMove3 - Program In Movements</field>
+    <next>
+      <block type="comment_comment" id="13">
+        <field name="TEXT">Enter Program as Numbers from Left to Right</field>
+        <next>
+          <block type="comment_comment" id="15">
+            <field name="TEXT">0 - Stop (Not in PgmDemo)</field>
+            <next>
+              <block type="comment_comment" id="17">
+                <field name="TEXT">1 - Forwards</field>
+                <next>
+                  <block type="comment_comment" id="19">
+                    <field name="TEXT">2 - Reverse</field>
+                    <next>
+                      <block type="comment_comment" id="21">
+                        <field name="TEXT">3 - Left</field>
+                        <next>
+                          <block type="comment_comment" id="23">
+                            <field name="TEXT">4 - Right</field>
+                            <next>
+                              <block type="variables_set" id="25" inline="true">
+                                <field name="VAR">programDigits</field>
+                                <value name="VALUE">
+                                  <block type="math_number" id="32">
+                                    <field name="NUM">123401234</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="36" inline="true">
+                                    <field name="VAR">pgmSize</field>
+                                    <value name="VALUE">
+                                      <block type="math_number" id="43">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="variables_set" id="49" inline="true">
+                                        <field name="VAR">tempDigits</field>
+                                        <value name="VALUE">
+                                          <block type="variables_get" id="57">
+                                            <field name="VAR">programDigits</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="controls_whileUntil" id="64" inline="false">
+                                            <field name="MODE">WHILE</field>
+                                            <value name="NUMBER">
+                                              <block type="logic_compare" id="71" inline="true">
+                                                <field name="OP">NEQ</field>
+                                                <value name="A">
+                                                  <block type="variables_get" id="79">
+                                                    <field name="VAR">tempDigits</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="86">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO">
+                                              <block type="variables_set" id="100" inline="true">
+                                                <field name="VAR">tempDigits</field>
+                                                <value name="VALUE">
+                                                  <block type="math_arithmetic" id="107" inline="true">
+                                                    <field name="OP">DIVIDE</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="115">
+                                                        <field name="VAR">tempDigits</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="122">
+                                                        <field name="NUM">10</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="123" inline="true">
+                                                    <field name="VAR">pgmSize</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_arithmetic" id="131" inline="true">
+                                                        <field name="OP">ADD</field>
+                                                        <value name="A">
+                                                          <block type="variables_get" id="139">
+                                                            <field name="VAR">pgmSize</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_number" id="124">
+                                                            <field name="NUM">1</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
